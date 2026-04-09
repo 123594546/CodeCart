@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import { sessionStore } from '@/stores/session'
-import AuthView from '@/views/AuthView.vue'
-import CartView from '@/views/CartView.vue'
-import CodesView from '@/views/CodesView.vue'
-import HomeView from '@/views/HomeView.vue'
-import OrdersView from '@/views/OrdersView.vue'
-import ProductDetailView from '@/views/ProductDetailView.vue'
+
+const HomeView = () => import('@/views/HomeView.vue')
+const AuthView = () => import('@/views/AuthView.vue')
+const ProductDetailView = () => import('@/views/ProductDetailView.vue')
+const CartView = () => import('@/views/CartView.vue')
+const OrdersView = () => import('@/views/OrdersView.vue')
+const CodesView = () => import('@/views/CodesView.vue')
+const AdminDashboardView = () => import('@/views/AdminDashboardView.vue')
 
 const router = createRouter({
   history: createWebHistory(),
@@ -47,6 +49,12 @@ const router = createRouter({
       name: 'codes',
       component: CodesView,
       meta: { requiresAuth: true, title: '我的兑换码' }
+    },
+    {
+      path: '/admin',
+      name: 'admin-dashboard',
+      component: AdminDashboardView,
+      meta: { requiresAuth: true, requiresAdmin: true, title: '管理工作台' }
     }
   ],
   scrollBehavior() {
@@ -62,6 +70,10 @@ router.beforeEach((to) => {
       name: 'auth',
       query: { redirect: to.fullPath }
     }
+  }
+
+  if (to.meta.requiresAdmin && !sessionStore.isAdmin) {
+    return { name: 'home' }
   }
 
   if (to.meta.guestOnly && sessionStore.isAuthenticated) {

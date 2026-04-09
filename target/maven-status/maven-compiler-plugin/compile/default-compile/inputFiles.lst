@@ -1,5 +1,6 @@
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\vo\cart\CartSummaryVO.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\common\constants\BusinessConstants.java
+D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\dto\admin\AdminCategorySaveRequest.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\controller\ProductCategoryController.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\entity\Product.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\config\properties\JwtProperties.java
@@ -12,13 +13,16 @@ D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\dto\cart\CartUpdateR
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\vo\order\OrderSubmitResponse.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\common\exception\GlobalExceptionHandler.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\controller\AuthController.java
+D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\dto\admin\AdminProductSaveRequest.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\service\CartService.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\mapper\RedeemCodeBatchMapper.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\vo\cart\CartItemVO.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\entity\ProductCategory.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\mapper\PayRecordMapper.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\service\ProductService.java
+D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\service\impl\RedeemCodeBatchServiceImpl.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\service\auth\AuthService.java
+D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\vo\admin\AdminCodeBatchVO.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\common\exception\BizException.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\common\exception\UnauthorizedException.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\entity\CodeIssueRecord.java
@@ -50,8 +54,11 @@ D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\service\impl\CartSer
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\dto\cart\CartAddRequest.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\dto\auth\RegisterRequest.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\mapper\CartItemMapper.java
+D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\controller\AdminProductController.java
+D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\service\RedeemCodeBatchService.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\dto\order\OrderPayRequest.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\entity\PayRecord.java
+D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\controller\AdminCategoryController.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\service\impl\ProductServiceImpl.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\service\impl\ProductCategoryServiceImpl.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\mapper\SysUserMapper.java
@@ -66,4 +73,6 @@ D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\common\entity\BaseEn
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\mapper\RedeemCodeMapper.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\common\context\LoginUser.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\vo\order\OrderItemVO.java
+D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\controller\AdminCodeBatchController.java
 D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\vo\auth\LoginResponse.java
+D:\#java_test\java_test\CodeCart\src\main\java\com\codecart\dto\admin\AdminCodeBatchImportRequest.java

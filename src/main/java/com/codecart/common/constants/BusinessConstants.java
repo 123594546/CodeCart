@@ -22,6 +22,14 @@ public final class BusinessConstants {
         }
     }
 
+    public static final class CategoryStatus {
+        public static final String ENABLED = "ENABLED";
+        public static final String DISABLED = "DISABLED";
+
+        private CategoryStatus() {
+        }
+    }
+
     public static final class ProductStatus {
         public static final String ON_SALE = "ON_SALE";
         public static final String OFF_SALE = "OFF_SALE";
@@ -79,6 +87,16 @@ public final class BusinessConstants {
         public static final String ISSUED = "ISSUED";
 
         private CodeStatus() {
+        }
+    }
+
+    public static final class BatchStatus {
+        public static final String PROCESSING = "PROCESSING";
+        public static final String COMPLETED = "COMPLETED";
+        public static final String PARTIAL_FAILED = "PARTIAL_FAILED";
+        public static final String FAILED = "FAILED";
+
+        private BatchStatus() {
         }
     }
 

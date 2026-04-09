@@ -10,6 +10,9 @@ export const sessionStore = reactive({
   ready: false,
   get isAuthenticated() {
     return Boolean(this.token && this.user)
+  },
+  get isAdmin() {
+    return this.user?.roleCode === 'ADMIN'
   }
 })
 

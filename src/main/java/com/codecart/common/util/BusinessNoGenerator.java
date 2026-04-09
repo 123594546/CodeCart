@@ -24,6 +24,10 @@ public final class BusinessNoGenerator {
         return nextNo("MOCKTXN");
     }
 
+    public static String nextBatchNo() {
+        return nextNo("BAT");
+    }
+
     private static String nextNo(String prefix) {
         int sequence = SEQUENCE.updateAndGet(current -> current >= 999 ? 1 : current + 1);
         return prefix + LocalDateTime.now().format(FORMATTER) + String.format("%03d", sequence);

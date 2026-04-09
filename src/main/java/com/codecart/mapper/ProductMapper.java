@@ -11,6 +11,16 @@ public interface ProductMapper extends BaseMapper<Product> {
 
     @Update("""
             UPDATE product
+            SET total_stock = total_stock + #{quantity},
+                available_stock = available_stock + #{quantity},
+                updated_at = NOW()
+            WHERE id = #{productId}
+              AND deleted = 0
+            """)
+    int increaseStockAfterImport(@Param("productId") Long productId, @Param("quantity") Integer quantity);
+
+    @Update("""
+            UPDATE product
             SET available_stock = available_stock - #{quantity},
                 sold_count = sold_count + #{quantity},
                 updated_at = NOW()
